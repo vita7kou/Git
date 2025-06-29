@@ -1,0 +1,28 @@
+﻿<pre>
+<script>
+//年齢が12才以下または60才以上は、500円。
+//年齢が18才以上と21才以下は、600円。
+
+//年齢に関係なく、女性であれば、700円。
+//通常料金は1000円とします。
+//なお、複数の条件にあてはまる場合は、安い料金を適用します。
+//年齢の変数をage,
+//女性の変数をisFemale とします。(論理型)
+//(isFemaleの値がtrue→女性、false→男性とします)
+//( 10才で女性の場合は700円ではなく500円)
+
+let price = 1000;
+let age = 18; 
+let isFemale = true; 
+
+if(age<=12 || age>=60){
+  price=500;
+}else if(age>=18 && age<=21){
+  price=600;
+}else if(isFemale==true){
+  price=700;
+}
+
+document.writeln("料金は" + price + "円");
+</script>
+</pre>
