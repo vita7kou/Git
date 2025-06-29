@@ -1,0 +1,25 @@
+﻿<pre>
+<script>
+//次の配列の数値(要素)をすべて表示するプログラムを作成してください。
+//配列内の数値の合計(SUM)と平均(AVG)を求めてください。
+
+
+let numbers = [70, 80, 54, 75, 98, 45, 32, 85, 55];
+let sum =0
+let count =0
+for(let i=0; i<numbers.length; i++){
+  if(numbers[i]>=80){
+    count++   
+    }
+  sum =sum +numbers[i];
+  document.writeln(numbers[i]);
+}
+document.writeln("SUM:"+sum);
+document.writeln("AVG:"+sum/numbers.length);
+document.writeln("COUNT:"+count);
+
+
+
+
+</script>
+</pre>
