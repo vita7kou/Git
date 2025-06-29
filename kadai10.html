@@ -1,0 +1,31 @@
+﻿<pre>
+<script>
+//配列pointsの最大値と最小値を求めるプログラムを繰返し構文使用で作成
+
+
+let points = [ 300, 250, 320, 500, 450, 150, 480, 650, 380, 520] ;
+let i=0;
+let max=0;
+let min=points[0];
+while(i<points.length){
+
+  if(max<points[i]){
+    max=points[i]
+  }
+  
+  if(min>points[i]){
+    min=points[i]
+  }
+i++;
+}
+
+
+document.writeln(max);
+document.writeln(min);
+
+
+
+
+
+</script>
+</pre>
